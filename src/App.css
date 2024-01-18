@@ -108,9 +108,6 @@ section{
   display: flex;
   align-items: center;
   padding: 0 9%;
-/*   background: url("./assets/kacImg2.png") no-repeat;
-  background-size:cover;
-  background-position: center;  */
 }
 .home-content{
   max-width: 60rem;
@@ -202,7 +199,6 @@ section{
 }
 
 .btn-box .btn:nth-child(2):hover{
-
   color: var(--bg-color);
 }
 
@@ -422,94 +418,8 @@ background: var(--second-bg-color);
   right: 10px;
 }
 :is(.button-next, .button-prev){
-  /* swiper cucc */
   background-color: rgba(56, 245, 255, 0.3)
 }
-
-
-  /*ProjectDetails accordion*/
-  #details{
-    display: flex;
-    gap: 15px;
-    cursor: pointer;
-    background-color: var(--second-bg-color);
-    padding-top: 20rem;
-  }
-  #details .heading{
-    display: block;
-    position: relative; 
-    font-size: 5rem;
-    margin-bottom: 3rem;
-    text-align: center;
-  }
-  article{
-    position: relative;
-    overflow: hidden;
-    background: #ffffff;
-    width: 64px;
-    height: 500px;
-    border-radius: 36px;
-    display: flex;
-    align-items: flex-end;
-    opacity: 0.9;
-    transition: 0.5s;
-  }
-  
-  article.active{
-    width: 500px;
-    opacity: 1;
-  }
-  
-  .cards h2, p{
-    color:var(--text-color);
-    margin: 0;
-  } 
-  
-  .usedTools{
-    text-align: center;
-    padding: 10vh;
-  }
-  article
-   .material-symbols-outlined{
-    display: grid;
-    place-items:center;
-    width: 50px;
-    height: 50px;
-    background: rgb(255, 255, 255 / 80%);
-    border-radius: 50%;
-    font-size: 28px;
-   }
-  
-   article img{
-    position: absolute;
-    z-index: 0;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    height: 150%;
-    filter: grayscale(0.5);
-   }
-   article .cards{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 500px;
-    z-index: 1;
-    opacity: 0;
-    visibility: hidden;
-    padding: 100px 0 20px 20px;
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    background: linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(0 0 0 / 80%));
-    transition: 0.25s;
-   }
-  
-   article.active .cards{
-    opacity: 1;
-    visibility: visible;
-   }
-  
 
 .education{
   display: flex;
