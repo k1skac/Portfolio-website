@@ -16,8 +16,8 @@ In the project directory, you can run:
 
 Runs the app in the development mode.\
 You can find my website here:
-https://kaczorbalazs.netlify.app/
 
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-[![Netlify Status](https://api.netlify.com/api/v1/badges/35477417-60b6-4a93-a9a3-5c52cadcf268/deploy-status)](https://app.netlify.com/sites/kaczorbalazs/deploys)
+
+Open https://kaczorbalazs.netlify.app/ to view it in your browser.
+### [![Netlify Status](https://api.netlify.com/api/v1/badges/35477417-60b6-4a93-a9a3-5c52cadcf268/deploy-status)](https://app.netlify.com/sites/kaczorbalazs/deploys)
 
