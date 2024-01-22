@@ -28,7 +28,7 @@ function App() {
        }
       
     sections.forEach(section =>{
-      let offset = section.offsetTop - 100;
+      let offset = section.offsetTop - 150;
       let height = section.offsetHeight;
       let id = section.getAttribute("id");
       if (scrollTop >= offset &&  scrollTop < offset + height){     

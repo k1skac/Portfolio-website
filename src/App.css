@@ -265,7 +265,6 @@ transition: 0.5s;
   width: 85%;
   height: 85%;
   background: transparent;
-
 }
 .home-imgHover{
   position: absolute;
@@ -364,16 +363,24 @@ background: var(--second-bg-color);
  .datacontainer{
   color: var(--text-color);
   font-size: 2rem;
-
 }
 #coverSwiper{
   visibility: visible;
 }
+.slideImg{
+  width: 70%;
+  object-fit: contain;
+}
+
 #cubeSwiper{
   display: none;
-  position: absolute;
-  top: 15%;
-  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
 }
  .swiper{
   max-width: 700px;
@@ -385,7 +392,6 @@ background: var(--second-bg-color);
 .swiper-wrapper{
   width: 100%;
   height: 300px;
-  
 }
 .swiper-slide{
   width: 300px;
@@ -426,7 +432,6 @@ background: var(--second-bg-color);
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: auto;
   padding-bottom: 5rem;
   background-color: var(--second-bg-color);
 }
@@ -595,7 +600,6 @@ width: 100%;
 }
 
 .contact{
-  min-height: auto;
   padding-bottom: 7rem;
   background-color: var(--second-bg-color);
 }
@@ -781,9 +785,8 @@ width: 105%;
 
 @media (max-width: 850px) {
   .animate.home-img{
-      width: 55%;
+      width: 100%;
   }
-  
 }
 @media (max-width:768px){
   .header{
@@ -841,7 +844,9 @@ width: 105%;
       pointer-events: none;
       background: var(--bg-color);
       opacity: .4;
+      width: 100%;
       }
+
 }
 @media (max-width: 520px) {
   html{
@@ -858,6 +863,7 @@ width: 105%;
      width: 38px; 
      height: 38px;
   }
+  
 }
 @media (max-width: 462px) {
   .home-content h1{
@@ -881,6 +887,9 @@ width: 105%;
   .home{
       justify-content: center;
   }
+.home-imgHover{
+  width: 100%;
+}
 
   .home-content{
       display: flex;
