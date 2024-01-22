@@ -92,7 +92,7 @@ const Carousel = (styles) => {
       
         {slides.map((slide, index) => (
             <SwiperSlide key={index} className="swiper-slide" onClick={() => setActive(index)}>
-                    <img src={slide} alt="This is the swiper" onClick={dataSwiper} height={400}/>        
+                    <img src={slide} alt="This is the swiper" className="slideImg" onClick={dataSwiper} height={400}/>        
             </SwiperSlide>           
             ))} 
           <div className="button-prev">
@@ -122,20 +122,20 @@ const Carousel = (styles) => {
                  shadowScale: 0.3               
              }}>  
                 <SwiperSlide className="swiper-wrapper" onClick={dataSwiper} > 
-                    <img src={projects[active].image} alt={projects[active].title} onClick={dataSwiper} height={400}/>
+                    <img className="slideImg" src={projects[active].image} alt={projects[active].title} onClick={dataSwiper} height={400}/>
                      <h3 className="slide-data active" >{projects[active].title}</h3>  
                 </SwiperSlide>   
                 <SwiperSlide className="swiper-wrapper"onClick={dataSwiper}> 
                 <h3 className="slide-data" onClick={dataSwiper}>Date: {projects[active].date} </h3>
                 <h3 className="slide-data" onClick={dataSwiper}>Project Type: {projects[active].type}</h3>
-                <img src={projects[active].image} alt={projects[active].title} onClick={dataSwiper} height={400}/>  
+                <img className="slideImg" src={projects[active].image} alt={projects[active].title} onClick={dataSwiper} height={400}/>  
                 </SwiperSlide>  
                 <SwiperSlide className="swiper-wrapper" onClick={dataSwiper}> 
-                <img src={projects[active].image} alt={projects[active].title} onClick={dataSwiper} height={400}/>
+                <img className="slideImg" src={projects[active].image} alt={projects[active].title} onClick={dataSwiper} height={400}/>
                   <h3 className="slide-data" onClick={dataSwiper}>Used Tools: {projects[active].usedTools}</h3>
                 </SwiperSlide> 
                 <SwiperSlide className="swiper-wrapper" onClick={dataSwiper}>  
-                <img src={projects[active].image} alt={projects[active].title} onClick={dataSwiper} height={400}/>
+                <img className="slideImg" src={projects[active].image} alt={projects[active].title} onClick={dataSwiper} height={400}/>
                     <h3 className="slide-data" class="description" onClick={dataSwiper}>Project description: {projects[active].description}</h3>   
                 </SwiperSlide>  
                 <div className="button-prev">
