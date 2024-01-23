@@ -11,7 +11,7 @@ const Contact = () => {
         if(message.value === null | email.value === null){
             window.alert("You did not enter your email and / or message! Fill in the required fields!")
         } else{
-           axios.post("http://localhost:8080/contact", {
+           axios.post("https://portfolioweb-3jvc.onrender.com", {
             fullName: fullName.value,
             email: email.value,
             message: message.value,
@@ -21,7 +21,7 @@ const Contact = () => {
         .then((response) => {
            if(response.status === 200){
             window.alert("Email send successful"  + response.data)
-            window.location.href="http://localhost:3000"
+            window.location.href="http://kaczorbalazs.netlify.app"
            } 
         }).catch((error)=> {
             console.error(error);
