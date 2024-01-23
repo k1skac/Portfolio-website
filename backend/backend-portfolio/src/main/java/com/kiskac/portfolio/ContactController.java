@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 import jakarta.mail.MessagingException;
 import lombok.RequiredArgsConstructor;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://kaczorbalazs.netlify.app")
 @RestController
 @RequiredArgsConstructor
 public class ContactController {
