@@ -11,7 +11,7 @@ const Contact = () => {
         if(message.value === null | email.value === null){
             window.alert("You did not enter your email and / or message! Fill in the required fields!")
         } else{
-           axios.post("https://portfolioweb-3jvc.onrender.com", {
+           axios.post("https://portfolioweb-3jvc.onrender.com/contact", {
             fullName: fullName.value,
             email: email.value,
             message: message.value,
